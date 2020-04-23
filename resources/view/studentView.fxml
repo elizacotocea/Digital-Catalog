@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" onMouseClicked="#handleMouseEvent" prefHeight="611.0" prefWidth="828.0" style="-fx-background-color: DDEDEF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myproject.controllers.StudentController">
+   <children>
+      <Pane layoutX="-12.0" prefHeight="611.0" prefWidth="257.0" style="-fx-background-color: #A9BCF5;">
+         <children>
+            <TextField fx:id="textFieldNume" layoutX="80.0" layoutY="191.0" prefHeight="25.0" prefWidth="159.0" />
+            <TextField fx:id="textFieldPrenume" layoutX="80.0" layoutY="227.0" prefHeight="25.0" prefWidth="159.0" />
+            <TextField fx:id="textFieldEmail" layoutX="80.0" layoutY="261.0" prefHeight="25.0" prefWidth="159.0" />
+            <ComboBox fx:id="grupaComboBox" editable="true" layoutX="80.0" layoutY="336.0" prefHeight="25.0" prefWidth="159.0" />
+            <ComboBox fx:id="profComboBox" editable="true" layoutX="80.0" layoutY="299.0" prefHeight="25.0" prefWidth="159.0" />
+            <ImageView fitHeight="126.0" fitWidth="114.0" layoutX="72.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../graduate+cap+student+icon-1320195956125700041.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="15.0" layoutY="196.0" text="Nume">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="266.0" text="Email">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="232.0" prefHeight="10.0" prefWidth="56.0" text="Prenume">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="340.0" prefHeight="10.0" prefWidth="56.0" text="Grupa">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="304.0" prefHeight="10.0" prefWidth="56.0" text="Profesor">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #5882FA;" text="Add" textFill="#161616">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="deleteButton" layoutX="95.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #5882FA;" text="Delete" textFill="#1c1a1a">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="updateButton" layoutX="178.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #5882FA;" text="Update" textFill="#161515">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+               </font></Button>
+            <Button layoutX="55.0" layoutY="441.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: #5882FA;" text="Clear all" textFill="#1c1b1b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="logOutButton" layoutX="55.0" layoutY="554.0" mnemonicParsing="false" onAction="#logOutAction" prefHeight="26.0" prefWidth="148.0" style="-fx-background-color: #2E64FE;" text="Log out" textFill="#f0eded">
+               <font>
+                  <Font name="Bell MT Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="43.0" layoutY="6.0" text="Logged in as administrator" underline="true">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </Pane>
+      <ImageView fitHeight="49.0" fitWidth="212.0" layoutX="672.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logo_UBB_ro.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableViewStudents" layoutX="317.0" layoutY="176.0" prefHeight="320.0" prefWidth="469.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="41.59991455078125" text="ID" visible="false" />
+          <TableColumn fx:id="numeColumn" prefWidth="75.20001220703125" text="Nume" />
+          <TableColumn fx:id="prenumeColumn" prefWidth="83.20004272460938" text="Prenume" />
+            <TableColumn fx:id="profColumn" text="Profesor" />
+            <TableColumn fx:id="grupaColumn" prefWidth="84.0" text="Grupa" />
+            <TableColumn fx:id="emailColumn" prefWidth="144.79995117187502" text="Email" />
+        </columns>
+      </TableView>
+      <ToggleButton disable="true" layoutX="623.0" layoutY="536.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="78.0" text="Student" visible="false" />
+      <ToggleButton fx:id="notaButton" disable="true" layoutX="701.0" layoutY="536.0" mnemonicParsing="false" onAction="#changeSceneToGrade" prefHeight="36.0" prefWidth="78.0" text="Nota" visible="false" />
+      <Label layoutX="280.0" layoutY="124.0" prefHeight="16.0" prefWidth="114.0" text="Find student:">
+         <font>
+            <Font name="Britannic Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFilterNume" layoutX="385.0" layoutY="120.0" prefHeight="26.0" prefWidth="197.0" />
+   </children>
+</AnchorPane>

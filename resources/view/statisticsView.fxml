@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane fx:id="rootPane" prefHeight="473.0" prefWidth="893.0" style="-fx-background-color: #DAE0E6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myproject.controllers.StatisticsController">
+   <children>
+      <PieChart fx:id="raport1PieChart" layoutX="-1.0" layoutY="25.0" prefHeight="178.0" prefWidth="285.0" />
+      <PieChart fx:id="raport3PieChart" layoutX="289.0" layoutY="25.0" prefHeight="178.0" prefWidth="332.0" />
+      <PieChart fx:id="raport4PieChart" layoutX="570.0" layoutY="25.0" prefHeight="178.0" prefWidth="351.0" />
+      <Label fx:id="caption" />
+      <Label fx:id="l1" layoutX="21.0" layoutY="225.0" prefHeight="18.0" prefWidth="241.0" text="Label" />
+      <Label fx:id="l2" layoutX="21.0" layoutY="252.0" prefHeight="18.0" prefWidth="262.0" text="Label" />
+      <Label fx:id="l4" layoutX="283.0" layoutY="252.0" prefHeight="18.0" prefWidth="278.0" text="Label" />
+      <Label fx:id="l3" layoutX="283.0" layoutY="225.0" prefHeight="18.0" prefWidth="278.0" text="Label" />
+      <Label fx:id="l6" layoutX="581.0" layoutY="252.0" prefHeight="18.0" prefWidth="343.0" text="Label" />
+      <Label fx:id="l5" layoutX="581.0" layoutY="225.0" prefHeight="18.0" prefWidth="343.0" text="Label" />
+      <Circle fill="RED" layoutX="14.0" layoutY="234.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="YELLOW" layoutX="276.0" layoutY="234.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#58d3f7" layoutX="574.0" layoutY="234.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#b4f9ff" layoutX="574.0" layoutY="261.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ffd6bf" layoutX="14.0" layoutY="261.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#82fa58" layoutX="276.0" layoutY="261.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="l7" layoutX="21.0" layoutY="279.0" prefHeight="18.0" prefWidth="241.0" text="Label" />
+      <Label fx:id="l8" layoutX="21.0" layoutY="306.0" prefHeight="18.0" prefWidth="241.0" text="Label" />
+      <Label fx:id="l9" layoutX="21.0" layoutY="332.0" prefHeight="18.0" prefWidth="241.0" text="Label" />
+      <Label fx:id="l10" layoutX="21.0" layoutY="357.0" prefHeight="18.0" prefWidth="241.0" text="Label" />
+      <Circle fill="#ef473a" layoutX="14.0" layoutY="288.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#cb2d3e" layoutX="14.0" layoutY="315.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#870734" layoutX="14.0" layoutY="341.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#30122d" layoutX="14.0" layoutY="366.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
